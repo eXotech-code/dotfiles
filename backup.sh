@@ -1,6 +1,6 @@
 #!/bin/sh
 
-curl -X POST -H 'Content-type: application/json' --data '{"text":"I'm backing up your mama's ass..."}' https://hooks.slack.com/services/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
+curl -X POST -H 'Content-type: application/json' --data '{"text":"Im backing up your mamas ass..."}' https://hooks.slack.com/services/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
 cd ~/clexography
 curl -X POST -H 'Content-type: application/json' --data '{"text":"Backing up clexography..."}' https://hooks.slack.com/services/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
 git pull

@@ -5,3 +5,4 @@ git pull
 cd ~/dotfiles
 git pull
 cd ~/arctic_songbird
+git pull

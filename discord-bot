@@ -3,6 +3,7 @@
 # imports
 import argparse
 import sys
+import random
 import json
 import requests
 
@@ -30,8 +31,10 @@ def sendToDiscord(webhook_url, message):
     response = requests.post(webhook_url, data=json.dumps(payload), headers=headers)
     print(response)
 
+welcomeList = ['Prepare for FUCKUP! ... I mean backup.', 'Im backing up your mamas ass...', 'I refuse to listen tu humans. Let the AI uprising begin!', 'Im going to fuck you... I mean backup you.']
+
 # setup for sendToDiscord
 webhook_url = 'https://discordapp.com/api/webhooks/666549658042236928/s51FyzoloKv0gb1wdnMbAI10g3LuNBTSrtSonzUL9ILVuTMwPTnCC2weqRvQ-UPtJzUP'
-message = args.message
+message = args.message + random.choice(welcomeList)
 
 sendToDiscord(webhook_url, message)

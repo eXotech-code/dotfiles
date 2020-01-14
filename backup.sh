@@ -1,5 +1,6 @@
 #!/bin/sh
 
+~/dotfiles/discord-bot -w
 curl -X POST -H 'Content-type: application/json' --data '{"text":"Im backing up your mamas ass..."}' https://hooks.slack.com/services/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
 ~/dotfiles/discord-bot "Im backing up your mamas ass..."
 cd ~/clexography

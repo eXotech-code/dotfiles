@@ -1,0 +1,21 @@
+#!/bin/bash
+
+read -r -p 'Which project do you want to commit to? : ' project
+if [ "$project" == "clexography" ]
+then
+	cd /mnt/k/Programing/clexography
+	git pull
+	git show
+	read -r -p 'Commit message: ' desc
+	if [ "$desc" == "nothing" ]
+	then
+		exit
+	else
+		git add .
+		git add -u
+		git commit -m "$desc"
+		git push
+	fi
+else
+	echo You are currently not working on such a project. Exiting...
+	fi

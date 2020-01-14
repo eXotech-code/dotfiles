@@ -16,7 +16,6 @@ class argParser(argparse.ArgumentParser):
 
 parser = argParser()
 parser.add_argument('message', type=str, help='the message you want to sendo to Discord')
-parser.add_argument('-w', '--welcome', help='welcome message')
 args = parser.parse_args()
 
 def sendToDiscord(webhook_url, message):
@@ -36,9 +35,9 @@ welcomeList = ['Prepare for FUCKUP! ... I mean backup.', 'Im backing up your mam
 
 # setup for sendToDiscord
 webhook_url = 'https://discordapp.com/api/webhooks/666549658042236928/s51FyzoloKv0gb1wdnMbAI10g3LuNBTSrtSonzUL9ILVuTMwPTnCC2weqRvQ-UPtJzUP'
-if not args.welcome:
-    message = args.message
-else:
+if 'welcome' in args.message:
     message = random.choice(welcomeList)
+else:
+    message = args.message
 
 sendToDiscord(webhook_url, message)

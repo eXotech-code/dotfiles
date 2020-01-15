@@ -37,7 +37,8 @@ def backup(welcomeList, messageList, projectList, length, webhook_url):
         message = messageList[i]
         projectCd = 'cd ~/' + projectList[i]
         sendToDiscord(webhook_url, message)
-        sub.run(projectCd, shell=True)
+        sub.run(projectCd, shell = True)
+        sub.run('git pull', shell = True)
         i += 1
 
     message = "Backup procedure completed you fucking bitch!"

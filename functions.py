@@ -35,7 +35,7 @@ def backup(welcomeList, messageList, projectList, length, webhook_url):
     # while loop iterates through list of projects and backs them up
     while i < length:
         message = messageList[i]
-        projectCd = 'cd ~/' + projectList[i]
+        projectCd = 'cd ~/' + str(projectList[i])
         sendToDiscord(webhook_url, message)
-        sub.run(str(projectCd))
+        sub.run(projectCd)
         i += 1

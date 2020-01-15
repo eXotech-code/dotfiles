@@ -2,7 +2,6 @@
 
 ~/dotfiles/discord-bot welcome
 curl -X POST -H 'Content-type: application/json' --data '{"text":"Starting backup, because apparently you cannot keep your fucking code clean!"}' https://hooks.slack.com/services/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
-~/dotfiles/discord-bot "Starting backup, because apparently you cannot keep your fucking code clean!"
 cd ~/clexography
 curl -X POST -H 'Content-type: application/json' --data '{"text":"Backing up clexography..."}' https://hooks.slack.com/services/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
 ~/dotfiles/discord-bot "Backing up clexography..."

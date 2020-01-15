@@ -1,3 +1,6 @@
 #!/usr/bin/env python3
 
-import functions
+# imports
+import functions as fn
+
+fn.backup(fn.welcomeList, fn.messageList, fn.projectList, fn.length, fn.webhook_url)

@@ -17,10 +17,10 @@ parser.add_argument('length', type=int, help='defines lenght of the generated pa
 args = parser.parse_args()
 
 # object initialization
-passwordList = ()
-chars = ('A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'W', 'X', 'Y', 'Z')
-lowerChars = (x.lower() for x in chars)
-numbers = (range(0, 9))
+passwordList = []
+chars = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'W', 'X', 'Y', 'Z']
+lowerChars = [x.lower() for x in chars]
+numbers = [range(0, 9)]
 
 # adds more characters to the password list
 def charsGenerator(chars, numbers):

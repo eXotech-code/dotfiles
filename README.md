@@ -11,7 +11,8 @@ Dotfiles for my unix configurations.
 * [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
 
 ##### Font
-* [Fira Code](https://github.com/tonsky/FiraCode)
+* [JetBrains Mono](https://github.com/tonsky/FiraCode) - terminal
+* [Montserrat](https://fonts.google.com/specimen/Montserrat) - UI
 
 ##### Color scheme
-* [Atom One Dark](https://store.kde.org/p/1216368/) + [vscode color theme](https://marketplace.visualstudio.com/items?itemName=akamud.vscode-theme-onedark)
+* [Nord](https://www.nordtheme.com/)

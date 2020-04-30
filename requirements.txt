@@ -1,0 +1,5 @@
+visual-studio-code-bin
+tmux
+zsh
+vim
+ttf-jetbrains-mono

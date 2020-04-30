@@ -1,0 +1,27 @@
+{
+    "C_Cpp.updateChannel": "Insiders",
+    "editor.fontLigatures": true,
+    "workbench.colorTheme": "Nord",
+    "terminal.integrated.fontFamily": "\"JetBrains Mono\", \"Regular\"",
+    "latex-workshop.view.pdf.viewer": "tab",
+    "prettier.tabWidth": 4,
+    "[python]": {
+        "editor.formatOnSave": false
+    },
+    "prettier.printWidth": 120,
+    "liveServer.settings.donotShowInfoMsg": true,
+    "editor.formatOnSave": true,
+    "files.associations": {
+        "*.COBOL*": "cobol",
+        "*.COB*": "cobol",
+        "*.COBCOPY*": "cobol",
+        "*.COPYBOOK*": "cobol",
+        "*.COPY*": "cobol",
+        "*.PL1*": "pl1",
+        "*.PLI*": "pl1",
+        "*.INC*": "pl1",
+        "*.INCLUDE*": "pl1",
+        "*.JCL*": "jcl"
+    },
+    "editor.fontFamily": "JetBrains Mono"
+}

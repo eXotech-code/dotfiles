@@ -68,7 +68,7 @@ ZSH_THEME="spaceship"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(archlinux git python zsh-syntax-highlighting zsh-autosuggestions)
+plugins=(archlinux git python zsh-syntax-highlighting zsh-autosuggestions npm yarn sudo)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -101,3 +101,14 @@ source $ZSH/oh-my-zsh.sh
 # Autosuggestion
 ZSH_AUTOSUGGEST_STRATEGY=(history completion)
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#464e4f"
+source /usr/share/nvm/init-nvm.sh
+
+# Aliases
+alias workspace="~/bin/workspace.sh"
+alias e="vim"
+
+# Disable Software Flow Control
+stty -ixon
+
+# Config for vim lightline
+export TERM=xterm-256color

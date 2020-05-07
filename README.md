@@ -16,3 +16,6 @@ Dotfiles for my unix configurations.
 
 ##### Color scheme
 * [Nord](https://www.nordtheme.com/)
+
+### Installation
+To install just run `./install.sh`

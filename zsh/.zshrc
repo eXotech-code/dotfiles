@@ -106,6 +106,7 @@ source /usr/share/nvm/init-nvm.sh
 # Aliases
 alias workspace="~/bin/workspace.sh"
 alias e="vim"
+alias containers="sudo docker container -ls"
 
 # Disable Software Flow Control
 stty -ixon

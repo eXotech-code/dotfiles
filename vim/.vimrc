@@ -50,6 +50,11 @@ let g:nord_cursor_line_number_background = 1
 " higlight current line
 set cursorline
 
+" Cursor shape changing
+let &t_SI = "\<Esc>[6 q"
+let &t_SR = "\<Esc>[4 q"
+let &t_EI = "\<Esc>[2 q"
+
 " Lightline configuration
 set laststatus=2
 if !has('gui_running')

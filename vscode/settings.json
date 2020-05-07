@@ -23,5 +23,6 @@
         "*.INCLUDE*": "pl1",
         "*.JCL*": "jcl"
     },
-    "editor.fontFamily": "JetBrains Mono"
+    "editor.fontFamily": "JetBrains Mono",
+    "docker.attachShellCommand.linuxContainer": "/bin/sh -c \"[ -e /bin/zsh ] && /bin/zsh || /bin/sh\""
 }

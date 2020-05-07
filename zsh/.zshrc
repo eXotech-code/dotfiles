@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/home/jakub/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -68,7 +68,7 @@ ZSH_THEME="spaceship"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(archlinux git python zsh-syntax-highlighting zsh-autosuggestions npm yarn sudo)
+plugins=(archlinux git python docker zsh-syntax-highlighting zsh-autosuggestions npm yarn sudo)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -106,7 +106,7 @@ source /usr/share/nvm/init-nvm.sh
 # Aliases
 alias workspace="~/bin/workspace.sh"
 alias e="vim"
-alias containers="sudo docker container -ls"
+alias containers="docker container ls"
 
 # Disable Software Flow Control
 stty -ixon

@@ -101,7 +101,6 @@ source $ZSH/oh-my-zsh.sh
 # Autosuggestion
 ZSH_AUTOSUGGEST_STRATEGY=(history completion)
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#464e4f"
-source /usr/share/nvm/init-nvm.sh
 
 # Aliases
 alias workspace="~/bin/workspace.sh"

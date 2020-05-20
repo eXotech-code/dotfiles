@@ -1,3 +1,12 @@
+""""""""""""""""""""""""""""""""""""""""""
+" Basic Vim configuration optimized for	 "
+" good looks, prose writing (with LaTeX) "
+" and web development.					 "
+" 										 "
+" Made with love by Jakub Piskiewicz	 "
+" 										 "
+""""""""""""""""""""""""""""""""""""""""""
+
 """""""""""""""""""
 " PLUGINS SECTION "
 """""""""""""""""""
@@ -25,6 +34,7 @@ Plug 'ianks/vim-tsx'
 " Visuals and UI
 Plug 'arcticicestudio/nord-vim'
 Plug 'itchyny/lightline.vim'
+Plug 'ryanoasis/vim-devicons'
 
 " End of plugins
 call plug#end()
@@ -77,8 +87,27 @@ let g:lightline = {
 	\ },
 	\ }
 
+" Icons
+set encoding=UTF-8
+
 " Always show numbers
 set number
+
+" Closing characters
+inoremap {      {}<Left>
+inoremap {<CR>  {<CR>}<Esc>O
+inoremap {{     {
+inoremap {}     {}
+
+inoremap [      []<Left>
+inoremap [<CR>  [<CR>]<Esc>O
+inoremap [[     [
+inoremap []     []
+
+inoremap (      ()<Left>
+inoremap (<CR>  (<CR>)<Esc>O
+inoremap ((     (
+inoremap ()     ()
 
 " Set normal sidescroll
 set nowrap

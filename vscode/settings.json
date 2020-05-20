@@ -1,28 +1,7 @@
 {
-    "C_Cpp.updateChannel": "Insiders",
-    "editor.fontLigatures": true,
-    "workbench.colorTheme": "Nord",
-    "terminal.integrated.fontFamily": "\"JetBrains Mono\", \"Regular\"",
-    "latex-workshop.view.pdf.viewer": "tab",
-    "prettier.tabWidth": 4,
-    "[python]": {
-        "editor.formatOnSave": false
-    },
-    "prettier.printWidth": 120,
-    "liveServer.settings.donotShowInfoMsg": true,
-    "editor.formatOnSave": true,
-    "files.associations": {
-        "*.COBOL*": "cobol",
-        "*.COB*": "cobol",
-        "*.COBCOPY*": "cobol",
-        "*.COPYBOOK*": "cobol",
-        "*.COPY*": "cobol",
-        "*.PL1*": "pl1",
-        "*.PLI*": "pl1",
-        "*.INC*": "pl1",
-        "*.INCLUDE*": "pl1",
-        "*.JCL*": "jcl"
-    },
-    "editor.fontFamily": "JetBrains Mono",
-    "docker.attachShellCommand.linuxContainer": "/bin/sh -c \"[ -e /bin/zsh ] && /bin/zsh || /bin/sh\""
+    "vsonline.accountProvider": "Microsoft",
+    "terminal.integrated.shell.linux": "/usr/bin/zsh",
+    "git.autofetch": true,
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue"
 }

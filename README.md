@@ -18,4 +18,4 @@ Dotfiles for my unix configurations.
 * [Nord](https://www.nordtheme.com/)
 
 ### Installation
-To install just run `./install.sh`
+To install just run `./install.sh` in your zsh prompt.

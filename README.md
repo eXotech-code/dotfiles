@@ -1,9 +1,11 @@
-# dotfiles
+dotfiles
+========
 Dotfiles for my unix configurations.
 
 ![my Manjaro desktop](media/desktop-look.png)
 
-## My current configuration
+My current configuration
+------------------------
 #### Setup
 * [OpenSUSE Tumbleweed](https://www.opensuse.org/)
 * Lenovo Legion Y530
@@ -49,5 +51,6 @@ Dotfiles for my unix configurations.
 * [lightline](https://github.com/itchyny/lightline.vim)
 * [devicons](https://github.com/ryanoasis/vim-devicons)
 
-## Installation
+Installation
+------------
 To install just run `./install.sh` in your zsh prompt.

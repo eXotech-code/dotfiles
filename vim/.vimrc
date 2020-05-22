@@ -19,6 +19,8 @@ call plug#begin('~/.vim/plugged')
 " Utility
 Plug 'scrooloose/nerdtree'
 Plug 'Valloric/YouCompleteMe'
+Plug 'tpope/vim-commentary'
+Plug 'jiangmiao/auto-pairs'
 
 " Git support
 Plug 'tpope/vim-fugitive'
@@ -87,27 +89,14 @@ let g:lightline = {
 	\ },
 	\ }
 
+" NERDTree configuration
+let NERDTreeShowHidden=1 " Show hidden files
+
 " Icons
 set encoding=UTF-8
 
 " Always show numbers
 set number
-
-" Closing characters
-inoremap {      {}<Left>
-inoremap {<CR>  {<CR>}<Esc>O
-inoremap {{     {
-inoremap {}     {}
-
-inoremap [      []<Left>
-inoremap [<CR>  [<CR>]<Esc>O
-inoremap [[     [
-inoremap []     []
-
-inoremap (      ()<Left>
-inoremap (<CR>  (<CR>)<Esc>O
-inoremap ((     (
-inoremap ()     ()
 
 " Set normal sidescroll
 set nowrap

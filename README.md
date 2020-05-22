@@ -32,6 +32,8 @@ Dotfiles for my unix configurations.
 ##### Utility
 * [nerdtree](https://github.com/preservim/nerdtree)
 * [YouCompleteMe](https://github.com/ycm-core/YouCompleteMe)
+* [commentary.vim](https://github.com/tpope/vim-commentary)
+* [Auto Pairs](https://github.com/jiangmiao/auto-pairs)
 ##### Git support
 * [fugitive.vim](https://github.com/tpope/vim-fugitive)
 * [nerdtree-git-plugin](https://github.com/Xuyuanp/nerdtree-git-plugin)

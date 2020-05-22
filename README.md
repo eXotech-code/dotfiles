@@ -35,7 +35,7 @@ My current configuration
 * [nerdtree](https://github.com/preservim/nerdtree)
 * [YouCompleteMe](https://github.com/ycm-core/YouCompleteMe)
 * [commentary.vim](https://github.com/tpope/vim-commentary)
-* [Auto Pairs](https://github.com/jiangmiao/auto-pairs)
+* [lexima.vim](https://github.com/cohama/lexima.vim)
 ###### Syntax checking
 * [Syntastic](https://github.com/vim-syntastic/syntastic)
 ###### Git support
@@ -43,6 +43,8 @@ My current configuration
 * [nerdtree-git-plugin](https://github.com/Xuyuanp/nerdtree-git-plugin)
 ###### LaTeX
 * [vimtex](https://github.com/lervag/vimtex)
+###### Markdown
+* [Vim-Flavored-Markdown](https://github.com/jtratner/vim-flavored-markdown)
 ###### TypeScipt
 * [typescript-vim](https://github.com/leafgarland/typescript-vim)
 * [vim-tsx](https://github.com/ianks/vim-tsx)

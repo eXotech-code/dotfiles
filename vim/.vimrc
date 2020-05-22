@@ -20,7 +20,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'scrooloose/nerdtree'
 Plug 'Valloric/YouCompleteMe'
 Plug 'tpope/vim-commentary'
-Plug 'jiangmiao/auto-pairs'
+Plug 'cohama/lexima.vim'
 
 " Git support
 Plug 'tpope/vim-fugitive'
@@ -30,6 +30,8 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'vim-syntastic/syntastic'
 " LaTeX
 Plug 'lervag/vimtex'
+" Markdown
+Plug 'jtratner/vim-flavored-markdown'
 " TypeScript
 Plug 'leafgarland/typescript-vim'
 Plug 'ianks/vim-tsx'
@@ -62,6 +64,8 @@ if !exists('g:ycm_semantic_triggers')
 	let g:ycm_semantic_triggers = {}
 endif
 au VimEnter * let g:ycm_semantic_triggers.tex=g:vimtex#re#youcompleteme
+
+" Markdown
 
 " Command autocompletion
 set wildmenu

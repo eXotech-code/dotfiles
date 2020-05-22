@@ -27,6 +27,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 
 " Languages support
+Plug 'vim-syntastic/syntastic'
 " LaTeX
 Plug 'lervag/vimtex'
 " TypeScript
@@ -45,7 +46,17 @@ call plug#end()
 " CONFIGURATION SECTION "
 """"""""""""""""""""""""
 
-" LaTeX configuration
+" Syntastic
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+
+" LaTeX
 let g:vimtex_complete_enabled = 1
 if !exists('g:ycm_semantic_triggers')
 	let g:ycm_semantic_triggers = {}
@@ -56,7 +67,7 @@ au VimEnter * let g:ycm_semantic_triggers.tex=g:vimtex#re#youcompleteme
 set wildmenu
 set wildmode=longest,list,full
 
-" Themes configuration
+" Themes
 colorscheme nord
 let g:nord_cursor_line_number_background = 1
 " higlight current line
@@ -67,7 +78,7 @@ let &t_SI = "\<Esc>[6 q"
 let &t_SR = "\<Esc>[4 q"
 let &t_EI = "\<Esc>[2 q"
 
-" Lightline configuration
+" Lightline
 set laststatus=2
 if !has('gui_running')
 	set t_Co=256
@@ -89,7 +100,7 @@ let g:lightline = {
 	\ },
 	\ }
 
-" NERDTree configuration
+" NERDTree
 let NERDTreeShowHidden=1 " Show hidden files
 
 " Icons

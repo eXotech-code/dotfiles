@@ -34,7 +34,8 @@ Dotfiles for my unix configurations.
 * [YouCompleteMe](https://github.com/ycm-core/YouCompleteMe)
 * [commentary.vim](https://github.com/tpope/vim-commentary)
 * [Auto Pairs](https://github.com/jiangmiao/auto-pairs)
-
+###### Syntax checking
+* [Syntastic](https://github.com/vim-syntastic/syntastic)
 ###### Git support
 * [fugitive.vim](https://github.com/tpope/vim-fugitive)
 * [nerdtree-git-plugin](https://github.com/Xuyuanp/nerdtree-git-plugin)

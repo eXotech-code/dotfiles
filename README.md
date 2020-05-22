@@ -29,20 +29,21 @@ Dotfiles for my unix configurations.
 * [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
 
 #### Vim Plugins
-##### Utility
+###### Utility
 * [nerdtree](https://github.com/preservim/nerdtree)
 * [YouCompleteMe](https://github.com/ycm-core/YouCompleteMe)
 * [commentary.vim](https://github.com/tpope/vim-commentary)
 * [Auto Pairs](https://github.com/jiangmiao/auto-pairs)
-##### Git support
+
+###### Git support
 * [fugitive.vim](https://github.com/tpope/vim-fugitive)
 * [nerdtree-git-plugin](https://github.com/Xuyuanp/nerdtree-git-plugin)
-##### LaTeX
+###### LaTeX
 * [vimtex](https://github.com/lervag/vimtex)
-##### TypeScipt
+###### TypeScipt
 * [typescript-vim](https://github.com/leafgarland/typescript-vim)
 * [vim-tsx](https://github.com/ianks/vim-tsx)
-##### Theming and visuals
+###### Theming and visuals
 * [Nord](https://github.com/arcticicestudio/nord-vim)
 * [lightline](https://github.com/itchyny/lightline.vim)
 * [devicons](https://github.com/ryanoasis/vim-devicons)

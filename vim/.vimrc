@@ -57,6 +57,7 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
+let g:syntastic_mode_map = { 'passive_filetypes': ['tex'] }
 
 " LaTeX
 let g:vimtex_complete_enabled = 1
@@ -64,6 +65,7 @@ if !exists('g:ycm_semantic_triggers')
 	let g:ycm_semantic_triggers = {}
 endif
 au VimEnter * let g:ycm_semantic_triggers.tex=g:vimtex#re#youcompleteme
+autocmd FileType tex setlocal indentexpr=GetTeXIndent() " use LaTeX indentation
 
 " Markdown
 

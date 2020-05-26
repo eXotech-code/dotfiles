@@ -105,6 +105,7 @@ ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#464e4f"
 # Aliases
 alias workspace="~/bin/workspace.sh"
 alias e="vim"
+alias se="sudoedit"
 alias containers="docker container ls"
 
 # Disable Software Flow Control

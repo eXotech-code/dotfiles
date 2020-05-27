@@ -23,7 +23,8 @@ if [ $1 == "container" ]; then
 else
 	stow vim
 	stow tmux
-	stow vscode
 	stow zsh
+	ln -s ./vscode/settings.json ~/.config/Code/User/settings.json
+	ln -s ./zathura/zathurarc ~/.config/zathura/zathurarc
 fi
 echo Done!

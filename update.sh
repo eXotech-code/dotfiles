@@ -12,6 +12,9 @@ echo done
 echo copying .tmux.conf
 cp ~/.tmux.conf ./tmux
 echo done
+echo copying zathurarc
+cp ~/.config/zathura/zathurarc ./zathura
+echo done
 echo adding to git
 git add .
 echo "Update finished. Don't forget to commit your changes."

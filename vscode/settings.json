@@ -1,8 +1,11 @@
 {
-    "vsonline.accountProvider": "Microsoft",
-    "terminal.integrated.shell.linux": "/usr/bin/zsh",
     "git.autofetch": true,
+    "terminal.integrated.shell.linux": "/bin/zsh",
     "editor.suggestSelection": "first",
-    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-    "latex-workshop.view.pdf.viewer": "tab"
+    "C_Cpp.intelliSenseEngineFallback": "Disabled",
+    "C_Cpp.intelliSenseEngine": "Tag Parser",
+    "workbench.colorTheme": "Material Night Eighties",
+    "editor.fontFamily": "JetBrains Mono",
+    "editor.fontSize": 13,
+    "editor.fontLigatures": true
 }

@@ -107,6 +107,7 @@ alias workspace="~/bin/workspace.sh"
 alias e="vim"
 alias se="sudoedit"
 alias containers="docker container ls"
+alias q="exit"
 
 # Disable Software Flow Control
 stty -ixon
@@ -116,3 +117,6 @@ export TERM=xterm-256color
 
 # Fix for snaps not working in zsh
 emulate sh -c 'source /etc/profile'
+
+# Adding Doom emacs commands to command line
+export PATH=”$HOME/.emacs.d/bin:$PATH”

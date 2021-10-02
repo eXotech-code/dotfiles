@@ -108,6 +108,7 @@ alias e="vim"
 alias se="sudoedit"
 alias containers="docker container ls"
 alias q="exit"
+alias D="cd ~/Documents"
 
 # Disable Software Flow Control
 stty -ixon
@@ -120,3 +121,10 @@ emulate sh -c 'source /etc/profile'
 
 # Adding Doom emacs commands to command line
 export PATH=”$HOME/.emacs.d/bin:$PATH”
+
+# Password env variable for mysql-connector-python
+export DB_USER="root"
+export DB_PASS="hackerman"
+
+# Change default sudoedit program to Vim
+export SUDO_EDITOR=vim

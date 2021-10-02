@@ -18,10 +18,11 @@ call plug#begin('~/.vim/plugged')
 
 " Utility
 Plug 'scrooloose/nerdtree'
-Plug 'Valloric/YouCompleteMe'
 Plug 'tpope/vim-commentary'
 Plug 'cohama/lexima.vim'
 Plug 'airblade/vim-gitgutter'
+Plug 'preservim/nerdcommenter'
+Plug 'ycm-core/YouCompleteMe'
 
 " Git support
 Plug 'tpope/vim-fugitive'
@@ -33,9 +34,11 @@ Plug 'vim-syntastic/syntastic'
 Plug 'lervag/vimtex'
 " Markdown
 Plug 'jtratner/vim-flavored-markdown'
-" TypeScript
-Plug 'leafgarland/typescript-vim'
-Plug 'ianks/vim-tsx'
+" Python
+Plug 'vim-scripts/indentpython.vim'
+Plug 'nvie/vim-flake8'
+" Nginx conf files
+Plug 'chr4/nginx.vim'
 
 " Visuals and UI
 Plug 'arcticicestudio/nord-vim'
@@ -78,6 +81,7 @@ set wildmenu
 set wildmode=longest,list,full
 
 " Themes
+au ColorScheme * highlight BadWhitespace ctermbg=red guibg=red
 colorscheme nord
 let g:nord_cursor_line_number_background = 1
 " higlight current line
@@ -113,6 +117,10 @@ let g:lightline = {
 " NERDTree
 let NERDTreeShowHidden=1 " Show hidden files
 
+"YouCompleteMe
+let g:ycm_autoclose_preview_window_after_completion=1
+map <leader>g :YcmCompleter GoToDefinitionElseDeclaration<CR>
+
 " Icons
 set encoding=UTF-8
 
@@ -123,8 +131,31 @@ set number
 set nowrap
 set sidescroll=1
 
-" Set tab size
+" This is for better Python indentation as per
+" https://realpython.com/vim-and-python-a-match-made-in-heaven/
 set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+set expandtab
+set autoindent
+au BufNewFile, BufRead *.py
+	\ set textwidth=80
+
+" Code folding
+set foldmethod=indent
+set foldlevel=99
+
+" Flag trailing whitespace
+highlight BadWhitespace ctermbg=red guibg=red
+match BadWhitespace /\s\+$/
+autocmd BufWinEnter * match BadWhitespace /\s\+$/
+autocmd InsertEnter * match BadWhitespace /\s\+$/
+autocmd InsertLeave * match BadWhitespace /\s\+$/
+autocmd BufWinLeave * call clearmatches()
+
+" Enable usage of system clipboard (requires vim-x11 but I don't want to
+" bother installing this just for p or yy to work)
+"set clipboard=unnamedplus
 
 " Shortcuts
 " Nerd tree
@@ -135,3 +166,8 @@ map <C-s> :w<CR>
 map <C-x> :u<CR>
 " Switch between tabs
 map <C-l> :tabn<CR>
+" Map leader to space
+nnoremap <space> <nop>
+let mapleader=' '
+" Code folding
+map <leader>f za

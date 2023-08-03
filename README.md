@@ -7,7 +7,7 @@ Dotfiles for my unix configurations.
 My current configuration
 ------------------------
 #### Setup
-* [OpenSUSE Tumbleweed](https://www.opensuse.org/)
+* [Manjaro](https://www.opensuse.org/)
 * Lenovo Legion Y530
 * GNOME DE
 

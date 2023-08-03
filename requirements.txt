@@ -1,4 +1,0 @@
-tmux
-zsh
-vim
-ttf-jetbrains-mono

@@ -13,6 +13,9 @@ vim.opt.shiftwidth = 4
 -- Numbers
 vim.wo.number = true
 
+-- Work nicely with tmux
+vim.opt.background = 'dark'
+
 -- Plugins
 require('plugins')
 
@@ -63,7 +66,7 @@ vim.api.nvim_create_autocmd("WinClosed", {
   nested = true
 })
 
-require('nvim-tree').setup({ auto_close = true })
+require('nvim-tree').setup()
 
 local function open_nvim_tree()
 	require('nvim-tree.api').tree.open()

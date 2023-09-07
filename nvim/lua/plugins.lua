@@ -10,5 +10,11 @@ return require('packer').startup(function(use)
 	use 'terrortylor/nvim-comment'
 	use 'shaunsingh/nord.nvim'
 	use 'nvim-treesitter/nvim-treesitter'
-	use 'nvim-tree/nvim-tree.lua'
+	use {
+		'nvim-tree/nvim-tree.lua',
+		requires = {
+			'nvim-tree/nvim-web-devicons',
+		},
+	}
+	use 'nvim-lua/plenary.nvim'
 end)

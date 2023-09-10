@@ -11,3 +11,5 @@ PROMPT="%~$ "
 
 # Set GOPATH to it's proper location.
 export GOPATH=$HOME/go
+export GOBIN=$HOME/go/bin
+export PATH=$PATH:$GOBIN

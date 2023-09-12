@@ -100,5 +100,5 @@ vim.keymap.set('n', '<Space>', '<Nop>', { silent = true })
 vim.g.mapleader = ' '
 vim.keymap.set('n', '<leader>n', require('nvim-tree.api').tree.toggle, nil)
 vim.keymap.set('n', '<leader>w', '<c-w>', nil)
-
+vim.keymap.set('n', '<leader>x', function() require('trouble').toggle() end)
 

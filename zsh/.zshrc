@@ -2,7 +2,6 @@ autoload -Uz compinit
 compinit
 export EDITOR=/usr/bin/nvim
 export TERM=xterm-256color
-export
 
 PROMPT="%~$ "
 

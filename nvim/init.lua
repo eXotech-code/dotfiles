@@ -25,6 +25,9 @@ require'nvim_comment'.setup()
 -- Colors
 require('nord').set()
 
+-- TODOS
+require('todo-comments').setup()
+
 -- Project browser
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
@@ -76,7 +79,7 @@ vim.api.nvim_create_autocmd({ "VimEnter" }, { callback = open_nvim_tree })
 
 -- Syntax highlighting
 require'nvim-treesitter.configs'.setup {
-	ensure_installed = { "svelte", "lua" },
+	ensure_installed = { "svelte", "lua", "typescript" },
 	sync_install = false,
 	auto_install = true,
 	highlight = {

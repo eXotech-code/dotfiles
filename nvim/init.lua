@@ -9,6 +9,13 @@ vim.wo.wrap = false
 vim.opt.tabstop = 4
 vim.opt.softtabstop = 4
 vim.opt.shiftwidth = 4
+vim.api.nvim_create_autocmd("FileType", {
+	pattern = "asm",
+	callback = function()
+		vim.opt_local.tabstop = 2
+		vim.opt_local.shiftwidth = 2
+	end
+})
 
 -- Numbers
 vim.wo.number = true
@@ -79,7 +86,7 @@ vim.api.nvim_create_autocmd({ "VimEnter" }, { callback = open_nvim_tree })
 
 -- Syntax highlighting
 require'nvim-treesitter.configs'.setup {
-	ensure_installed = { "svelte", "lua", "typescript" },
+	ensure_installed = { "svelte", "lua", "latex", "typescript" },
 	sync_install = false,
 	auto_install = true,
 	highlight = {
@@ -104,4 +111,5 @@ vim.g.mapleader = ' '
 vim.keymap.set('n', '<leader>n', require('nvim-tree.api').tree.toggle, nil)
 vim.keymap.set('n', '<leader>w', '<c-w>', nil)
 vim.keymap.set('n', '<leader>x', function() require('trouble').toggle() end)
+vim.keymap.set('n', '<leader>d', vim.lsp.buf.references) 
 

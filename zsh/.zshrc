@@ -3,6 +3,10 @@ compinit
 export EDITOR=/usr/bin/nvim
 export TERM=xterm-256color
 
+# Move back and forward one word by using option+left-arrow / option+right-arrow
+bindkey "^[^[[D" backward-word
+bindkey "^[^[[C" forward-word
+
 PROMPT="%~$ "
 
 # Make RVM available on Arch-based distros.

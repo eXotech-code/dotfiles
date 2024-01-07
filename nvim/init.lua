@@ -105,6 +105,12 @@ local on_attach = function(client, bufnr)
 end
 require'lspconfig'.svelte.setup{ on_attach = on_attach }
 
+-- Format on save overrides
+vim.api.nvim_create_autocmd("FileType", {
+	pattern = "c",
+	callback = require('user.lsp.handlers').disable_format_on_save
+})
+
 -- Key mappings
 vim.keymap.set('n', '<Space>', '<Nop>', { silent = true })
 vim.g.mapleader = ' '

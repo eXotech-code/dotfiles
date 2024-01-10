@@ -16,3 +16,7 @@ PROMPT="%~$ "
 export GOPATH=$HOME/go
 export GOBIN=$HOME/go/bin
 export PATH=$PATH:$GOBIN
+
+# For syncing obsidian files.
+export OBSIDIAN_VAULT="$HOME/Documents"
+export PATH="$HOME/.dotfiles/obsidian-sync:$PATH"

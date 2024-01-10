@@ -6,5 +6,4 @@ then
 	exit 1
 fi
 
-rsync -avP "$OBSIDIAN_VAULT" ubuntu@piskiewicz.org:~
-
+scp -r -P 8022 "$OBSIDIAN_VAULT/Obsidian" jpiskiewicz@dev.antmicro.com:~

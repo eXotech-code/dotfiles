@@ -1,1 +1,4 @@
 nvim/plugin/packer_compiled.lua
+zed/.tmp*
+zed/embeddings
+zed/prompts
